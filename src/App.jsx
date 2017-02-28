@@ -6,6 +6,7 @@ import {
   Link
 } from 'react-router-dom'
 import News from './Routes/News/News'
+import People from './Routes/People/People'
 
 const App = () => (
   <Router>
@@ -22,7 +23,7 @@ const App = () => (
       <hr/>
 
       <Route exact path="/" component={News}/>
-      <Route path="/people" />
+      <Route path="/people" component={People}/>
     </div>
   </Router>
 )
